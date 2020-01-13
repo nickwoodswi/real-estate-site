@@ -11,6 +11,7 @@
         opacity: 0.5;
         filter: alpha(opacity=50);
     }
+
 }
 
 @media screen and (max-width: 570px) {
@@ -18,6 +19,7 @@
     div.navwrapper {
         display: none;
     }
+
 }
 
 @media screen and (min-width: 570px) {
@@ -29,6 +31,7 @@
         position: sticky;
         top: 46px !important;
     }
+
 }
 
 @media screen and (max-width: 600px) {
@@ -60,6 +63,28 @@
         width: 100%;
         margin-right: auto;
         margin-left: auto;
+    }
+    .sell-your-home-intro-container {
+        width: 100% !important;
+        margin: 25px;
+    }
+    .sell-your-home-staging-container {
+        flex-wrap: wrap;
+    }
+    .staging-photo-container{
+        width: 100% !important;
+    }
+    .sell-your-home-staging-intro {
+        width: 100% !important;
+    }
+    .relocation-container {
+        flex-wrap: wrap;
+    }
+    .relocation-intro-container{
+        width: 100% !important;
+    }
+    .relocation-photo-container{
+        width: 100% !important;
     }
 
 }
@@ -105,7 +130,7 @@ p {
     filter: alpha(opacity=75);
 }
 
-.sell-smarter-body > ul li {
+ul li {
     font-family: "Trebuchet MS", Helvetica, sans-serif;
     opacity: 0.75;
     filter: alpha(opacity=75);
@@ -654,6 +679,85 @@ a {
     line-height: 30px;
     text-align: center;
     background-color: white;
+}
+
+.sell-your-home-head-container{
+    display: flex;
+    flex-direction: flex-start;
+    background-image: url(https://www.logistec.com/wp-content/uploads/2017/12/placeholder.png);
+    width: 100%;
+}
+
+.sell-your-home-intro-container > h1{
+    font-family: 'Quicksand', sans-serif;
+}
+.sell-your-home-intro-container{
+    background-color: white;
+    margin-left: auto;
+    width: 50%;
+    margin-left: auto;
+    margin-top: 25px;
+    margin-right: 25px;
+    margin-bottom: 25px;
+    padding: 20px;
+}
+.what-your-home-is-worth-container{
+    width: 100%;
+}
+.what-your-home-is-worth-intro-container{
+    padding: 25px;
+    width: 90%;
+}
+.what-your-home-is-worth-intro-container > h2{
+    text-align: center;
+    font-family: 'Quicksand', sans-serif;
+}
+.sell-your-home-staging-container{
+    display: flex;
+    width: 100%;
+}
+.staging-photo-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    height: auto;
+    padding: 20px;
+    background-image: url(https://www.logistec.com/wp-content/uploads/2017/12/placeholder.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    font-family: 'Quicksand', sans-serif;
+}
+.sell-your-home-staging-intro{
+    width: 50%;
+    padding: 20px;
+    border-right: solid 10px orange;
+}
+.relocation-container{
+    display: flex;
+    width: 100%;
+    margin-top: 20px;
+    margin-bottom: 50px;
+}
+.relocation-intro-container{
+    width: 50%;
+    padding: 20px;
+    border-left: solid 10px orange;
+}
+.relocation-intro-container > h3 {
+    text-align: center;
+    font-family: 'Quicksand', sans-serif;
+}
+.relocation-photo-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    height: auto;
+    background-image: url(https://www.logistec.com/wp-content/uploads/2017/12/placeholder.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    font-family: 'Quicksand', sans-serif;
 }
 
 html {
