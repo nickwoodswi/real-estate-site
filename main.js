@@ -118,7 +118,6 @@ function buildPreviews(properties) {
     </div>`;
   });
   $('.listings').html(payload);
-  console.log(payload)
 }
 function chooseNeighborhood() {
   Object.keys(neighborhoods).forEach(id => {
