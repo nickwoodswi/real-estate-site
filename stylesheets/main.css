@@ -852,7 +852,7 @@ a {
     flex-direction: row;
     flex-wrap: wrap;
     height: 350px;
-    background: url(/srg-photos/3131-w-donges-bay-rd-325crop.jpg);
+    background: url(./srg-photos/3131-w-donges-bay-rd-325crop.jpg);
     background-size: cover;
     background-repeat: no-repeat;
 }
@@ -1042,20 +1042,15 @@ a {
     margin: 20px;
 }
 .homes-for-sale-by-neighborhood{
-    background-color: orange;
     display: flex;
     flex-direction: column;
     height: 325px;
 }
 .homes-for-sale-by-neighborhood-header{
-    background-color: orangered;
     text-align: center;
 }
 .neighborhood-selector{
     text-align: center;
-}
-.neighborhood-information{
-    background-color: chocolate;
 }
 
 html {
