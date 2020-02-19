@@ -39,7 +39,7 @@ const neighborhoods = {
 function loadPropertyDetails(url) {
   fetch(url)
   .then((response) => {
-    return response.text();
+    return response.text()
   })
   .then ((pageSource) => {
     const properties = [];
@@ -118,6 +118,7 @@ function buildPreviews(properties) {
     </div>`;
   });
   $('.listings').html(payload);
+  console.log(payload)
 }
 function chooseNeighborhood() {
   Object.keys(neighborhoods).forEach(id => {

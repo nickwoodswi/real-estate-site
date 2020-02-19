@@ -1,5 +1,4 @@
 function Calculator() {
-    //$('#calculate').on('click', function() {
       let inputs = document.getElementsByClassName('input');
       let P = inputs[0].value;
       let county = inputs[1].value;
@@ -12,12 +11,10 @@ function Calculator() {
       let usdPayment = '$'+monthlyPayment
       $('div.result').html(`${usdPayment}`)
       let searchUrl = 'https://www.firstweber.com/homes-for-sale/'+county+'_county/0_search-price-low/'+P+'_search-price-high/P_lp-cd-presentation/sc_lsearch_amt_search_price+DESC/sd_S2/';
-      console.log(searchUrl)
-      loadPropertyDetails(searchUrl)
-    //});
+      loadCalcPropertyDetails(searchUrl)
   }
 
-  function loadPropertyDetails(searchUrl) {
+  function loadCalcPropertyDetails(searchUrl) {
     fetch(searchUrl)
     .then((response) => {
       return response.text();
@@ -71,36 +68,37 @@ function Calculator() {
           });
         }
       });
-      buildPreview(properties);
+      buildCalcPreview(properties);
     });
   }
 
-function buildPreview(properties) {
+function buildCalcPreview(properties) {
   let item = properties[Math.floor(Math.random() * properties.length)]
-  console.log(item)
   $('div.suggested-property-image').html(
-    `<img class="suggested-property-image-preview" src="${item.photo}"></img><br>
-    <a href="mailto:ksewart@firstweber.com?subject=Schedule%20showing%20at%20${item.street}">Schedule Showing</a>`
+    `<a href="mailto:ksewart@firstweber.com?subject=Schedule%20showing%20at%20${item.street}">Schedule Showing</a>
+    <img class="suggested-property-image-preview" src="${item.photo}"></img><br>`
   )
   if (item.rooms.half === undefined) {
     $('div.suggested-property-info').html(
-      `<h3>${item.price}</h3>
+      `<a href="${item.link}" target="_blank">Full Listing</a><br>
+      <br>
+      <h3>${item.price}</h3>
       <h4>${item.city}<br>
       <h4>${item.rooms.bedrooms}<br> 
-      <h4>${item.rooms.full}</h4><br>
-      <a href="${item.link}" target="_blank">View Full Listing</a>`)
+      <h4>${item.rooms.full}</h4><br>`)
     } else {
       $('div.suggested-property-info').html(
-        `<h3>${item.price}</h3>
+        `<a href="${item.link}" target="_blank">Full Listing</a><br>
+        <br>
+        <h3>${item.price}</h3>
         <h4>${item.city}<br>
         <h4>${item.rooms.bedrooms}<br> 
         <h4>${item.rooms.full}<br>
-        <h4>${item.rooms.half}</h4>
-        <a href="${item.link}" target="_blank">View Full Listing</a>`)
+        <h4>${item.rooms.half}</h4>`)
   }
 }
 
-function clickCalculator() {
+function clickHandler() {
       $('#calculate').on('click', function() {
         let inputs = document.getElementsByClassName('input');
         let P = inputs[0].value;
@@ -114,10 +112,9 @@ function clickCalculator() {
         let usdPayment = '$'+monthlyPayment
         $('div.result').html(`${usdPayment}`)
         let searchUrl = 'https://www.firstweber.com/homes-for-sale/'+county+'_county/0_search-price-low/'+P+'_search-price-high/P_lp-cd-presentation/sc_lsearch_amt_search_price+DESC/sd_S2/';
-        console.log(searchUrl)
-        loadPropertyDetails(searchUrl)
+        loadCalcPropertyDetails(searchUrl)
       });
 }
 
 Calculator();
-clickCalculator();
+clickHandler();

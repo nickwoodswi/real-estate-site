@@ -3,6 +3,12 @@
     padding: 0;
 }
 
+@media all and (max-width: 320px) {
+    .how-to-buy-a-home-intro {
+        width: 100% !important
+    }
+}
+
 @media screen and (max-width: 322px) {
     .first-weber-logo {
         width: 0;
@@ -16,7 +22,33 @@
         opacity: 0.5;
         filter: alpha(opacity=50);
     }
+}
 
+
+@media screen and (max-width: 330px) {
+    .how-to-buy-a-home-correctly-header {
+        height: 395px !important;
+    }
+}
+
+@media screen and (max-width: 352px) {
+
+}
+
+@media all and (max-width: 475px) {
+    .mortgage-calculator {
+        height: 400px !important;
+    }
+    .how-to-buy-a-home-correctly-header {
+        margin-bottom: 150px !important;
+    }
+}
+
+
+@media all and (max-width: 537px) {
+    .how-to-buy-a-home-correctly-process {
+        padding-top: 25px !important;
+    }
 }
 
 @media screen and (max-width: 570px) {
@@ -94,6 +126,43 @@
 
 }
 
+@media all and (max-width: 660px) {
+
+    .how-to-buy-a-home-correctly-process {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .buying-process-intro {
+        width: 100% !important;
+        padding-right: 25px;
+    }
+    .buying-process-chart {
+        width: 100% !important;
+        background: url(/srg-photos/3131-w-donges-bay-rd-325crop.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+    .buying-process-chart img {
+        margin: 25px;
+        background-color: rgb(256, 256, 256, 0.5);
+        border: dotted 1px lightgrey;
+        padding: 10px;
+    }
+}
+
+@media all and (max-width: 760px) {
+    .how-to-buy-a-home-intro {
+        width: 100% !important;
+        margin-bottom: 20px;
+    }
+    .mortgage-calculator-container {
+        width: 100% !important;
+    }
+    .how-to-buy-a-home-correctly-process {
+        margin-top: 275px !important;
+    }
+}
+
 @media all and (max-width:30em) {
     .neighborhood-buttons button {
         display: block;
@@ -135,6 +204,9 @@ p {
     filter: alpha(opacity=75);
 }
 
+ul {
+    margin-left: 40px;
+}
 ul li {
     font-family: "Trebuchet MS", Helvetica, sans-serif;
     opacity: 0.75;
@@ -424,6 +496,7 @@ a {
     max-width: 600px;
     margin-left: auto;
     margin-right: auto;
+    margin-bottom: 25px;
 }
 
 .choose-neighborhood {
@@ -487,6 +560,7 @@ a {
     flex-wrap: wrap;
     justify-content: center;
     font-family: 'Quicksand', sans-serif;
+    margin-bottom: 40px;
 }
 
 .listing {
@@ -741,17 +815,19 @@ a {
 .relocation-container{
     display: flex;
     width: 100%;
+    height: 275px;
     margin-top: 20px;
-    margin-bottom: 50px;
 }
 .relocation-intro-container{
     width: 50%;
-    padding: 20px;
     border-left: solid 10px orange;
+    padding-left: 20px;
+    padding-right: 20px;
 }
 .relocation-intro-container > h3 {
-    text-align: center;
     font-family: 'Quicksand', sans-serif;
+    margin-top: 5px;
+    margin-bottom: 20px;
 }
 .relocation-photo-container{
     display: flex;
@@ -769,11 +845,14 @@ a {
     display: flex;
     flex-direction: column;
 }
+
 .how-to-buy-a-home-correctly-header {
     display: flex;
+    width: 100%;
     flex-direction: row;
+    flex-wrap: wrap;
     height: 350px;
-    background-image: url(/srg-photos/3131-w-donges-bay-rd-325crop.jpg);
+    background: url(/srg-photos/3131-w-donges-bay-rd-325crop.jpg);
     background-size: cover;
     background-repeat: no-repeat;
 }
@@ -784,49 +863,40 @@ a {
     width: 50%;
     font-family: 'Quicksand', sans-serif
 }
-.how-to-buy-a-home-correctly-subhead{
-    width: 100%;
-    height: 33%;
-    align-items: center;
-    padding-left: 10px;
-    line-height: 108px;
-}
-.how-to-buy-a-home-correctly-subhead span{
-    background-color: rgb(255, 255, 255, 0.9);
-    box-shadow: 2px 2px orange
-}
-.how-to-buy-a-home-correctly-headline{
-    width: 100%;
-    height: 33%;
-    font-size: 36px;
-    text-align: center;
-}
-.how-to-buy-a-home-correctly-headline span{
-    background-color: rgb(255, 255, 255, 0.9);
-    box-shadow: 2px 2px orange
-}
-.how-to-buy-a-home-correctly-detail{
-    width: 95%;
-    margin-left: auto;
-    margin-right: auto;
-    height: 33%;
-    font-family: "Trebuchet MS", Helvetica, sans-serif;
-}
-.how-to-buy-a-home-correctly-detail span{
-    background-color: rgb(255, 255, 255, 0.9);
-    font-weight: lighter;
-}
 .mortgage-calculator-container{
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 50%;
+    width: 50%; 
+    min-width: 320px;
+    height: auto
+}
+.how-to-buy-a-home-correctly-subhead{
+    height: 10%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding-left: 25px;
+}
+.how-to-buy-a-home-correctly-headline{
+    height: 20%;
+    font-size: 36px;
+    text-align: center;
+}
+.how-to-buy-a-home-correctly-detail{
+    height: 70%;
+    margin-left: auto;
+    margin-right: auto;
+    font-family: "Trebuchet MS", Helvetica, sans-serif;
+}
+.how-to-buy-a-home-correctly-detail span{
+    font-weight: lighter;
 }
 .mortgage-calculator{
     display: flex;
     flex-direction: column;
+    justify
     width: 100%;
-    height: 250px;
+    height: 350px;
     border: solid 1px grey;
     height: 325px;
     font-family: 'Quicksand', sans-serif;
@@ -867,7 +937,6 @@ a {
     font-family: "Quicksand", sans-serif;
     margin-bottom: 5px;
 }
-
 .mortgage-calculator-result{
     width: 60%;
     display: flex;
@@ -896,22 +965,33 @@ a {
 }
 .suggested-property-image{
     width: 50%;
-    height: 125px;
+    font-size: 12px;
 }
 .suggested-property-image-preview{
     width: 100%;
-    height: 100px;
+    height: auto;
+    max-height: 100px;
+    margin-top: 10px;
 }
+
 .suggested-property-info{
     width: 50%;
     margin-left: 5px;
     border-left: solid 5px orange;
     padding-left: 5px;
     height: 100px;
+    font-size: 12px;
+}
+.suggested-property-info a {
+    font-size: 14px;
+}
+.suggested-property-image a {
+    font-size: 14px;
 }
 
 .how-to-buy-a-home-correctly-process{
     display: flex;
+    width: 100%;
     flex-direction: row;
     height: 325px;
     align-items: center;
@@ -919,11 +999,10 @@ a {
     margin-bottom: 10px;
 }
 .buying-process-intro{
-    width: 55%;
-    font-family: 'Quicksand', sans-serif
-}
-.buying-process-intro ul{
-    margin-left: 40px;
+    width: 65%;
+    padding-left: 25px;
+    font-family: 'Quicksand', sans-serif;
+    margin-bottom: 25px;
 }
 .buying-process-chart{
     width: 35%;
@@ -933,18 +1012,34 @@ a {
     height: 300px;
 }
 .financing-section{
-    background-color: purple;
     display: flex;
+    width: 100;
     flex-direction: row;
-    height: 325px;
-}
-.lenders-list{
-    background-color: violet;
-    width: 50%;
+    height: 550px;
+    font-family: 'Quicksand', sans-serif;
+    margin-bottom: 25px;
 }
 .financing-guide{
-    background-color: fuchsia;
-    width: 50%;
+    width: 65%;
+    padding-left: 40px;
+    padding-top: 15px;
+    padding-right: 10px;
+}
+.lenders-list{
+    width: 35%;
+    text-align: center;
+    border-top: dotted 1px grey;
+    border-left: solid 10px orange;
+    border-bottom: dotted 1px grey;
+}
+.lenders-list h3{
+    font-weight: bold;
+    text-decoration: underline orange;
+    margin: 20px;
+}
+.lenders-list img{
+    width: 220px;
+    margin: 20px;
 }
 .homes-for-sale-by-neighborhood{
     background-color: orange;
@@ -957,7 +1052,6 @@ a {
     text-align: center;
 }
 .neighborhood-selector{
-    background-color: coral;
     text-align: center;
 }
 .neighborhood-information{
