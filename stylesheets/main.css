@@ -878,13 +878,15 @@ a {
     padding-left: 25px;
 }
 .how-to-buy-a-home-correctly-headline{
-    height: 20%;
+    height: 30%;
+    margin-bottom: 20px;
+    margin-left: 20px;
     font-size: 36px;
     text-align: center;
 }
 .how-to-buy-a-home-correctly-detail{
-    height: 70%;
-    margin-left: auto;
+    height: 60%;
+    margin-left: 20px;
     margin-right: auto;
     font-family: "Trebuchet MS", Helvetica, sans-serif;
 }
@@ -1017,7 +1019,7 @@ a {
     flex-direction: row;
     height: 550px;
     font-family: 'Quicksand', sans-serif;
-    margin-bottom: 25px;
+    margin-bottom: 75px;
 }
 .financing-guide{
     width: 65%;
