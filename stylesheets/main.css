@@ -7,6 +7,15 @@
     .how-to-buy-a-home-intro {
         width: 100% !important
     }
+    .financing-section{
+        margin-top: 520px;
+    }
+}
+
+@media all and (min-width: 320px) {
+    .lenders-list{
+        padding-top: 500px !important;
+    }
 }
 
 @media screen and (max-width: 322px) {
@@ -31,8 +40,40 @@
     }
 }
 
-@media screen and (max-width: 352px) {
+@media screen and (min-width: 330px) {
+    .lenders-list{
+        padding-top: 450px !important;
+    }
+}
 
+@media screen and (max-width: 400px) {
+    .how-to-buy-a-home-correctly-process{
+        margin-bottom: 75px !important;
+    }
+}
+
+@media screen and (min-width: 350px) {
+    .lenders-list{
+        padding-top: 400px !important;
+    }
+}
+
+@media screen and (min-width: 380px) {
+    .lenders-list{
+        padding-top: 350px !important;
+    }
+}
+
+@media screen and (min-width: 400px) {
+    .lenders-list{
+        padding-top: 325px !important;
+    }
+}
+
+@media screen and (min-width: 430px) {
+    .lenders-list{
+        padding-top: 300px !important;
+    }
 }
 
 @media all and (max-width: 475px) {
@@ -41,6 +82,15 @@
     }
     .how-to-buy-a-home-correctly-header {
         margin-bottom: 150px !important;
+    }
+    .relocation-container{
+        padding-bottom: 100px !important;
+    }
+}
+
+@media screen and (min-width: 475px) {
+    .lenders-list{
+        padding-top: 275px !important;
     }
 }
 
@@ -68,7 +118,6 @@
         position: sticky;
         top: 46px !important;
     }
-
 }
 
 @media screen and (max-width: 600px) {
@@ -119,11 +168,18 @@
     }
     .relocation-intro-container{
         width: 100% !important;
+        margin-bottom: 25px;
     }
     .relocation-photo-container{
         width: 100% !important;
     }
 
+}
+
+@media screen and (min-width: 600px) {
+    .lenders-list{
+        padding-top: 10px !important;
+    }
 }
 
 @media all and (max-width: 660px) {
@@ -135,10 +191,12 @@
     .buying-process-intro {
         width: 100% !important;
         padding-right: 25px;
+        margin-top: 20px;
     }
     .buying-process-chart {
+        margin-top: 40px;
         width: 100% !important;
-        background: url(https://github.com/nickwoodswi/real-estate-site/blob/master/srg-photos/3131-w-donges-bay-rd-325crop.jpg?raw=true);
+        background: url(/srg-photos/3131-w-donges-bay-rd-325crop.jpg);
         background-size: cover;
         background-repeat: no-repeat;
     }
@@ -148,9 +206,19 @@
         border: dotted 1px lightgrey;
         padding: 10px;
     }
+    .financing-section{
+        margin-top: 370px;
+    }
+    .financing-section{
+        margin-top: 425px !important;
+        margin-bottom: 75px !important;
+    }
 }
 
 @media all and (max-width: 760px) {
+    .how-to-buy-a-home-correctly-header{
+        flex-wrap: wrap;
+    }
     .how-to-buy-a-home-intro {
         width: 100% !important;
         margin-bottom: 20px;
@@ -160,6 +228,9 @@
     }
     .how-to-buy-a-home-correctly-process {
         margin-top: 275px !important;
+    }
+    .lenders-list{
+        margin-top: 50px !important;
     }
 }
 
@@ -812,34 +883,7 @@ a {
     padding: 20px;
     border-right: solid 10px orange;
 }
-.relocation-container{
-    display: flex;
-    width: 100%;
-    height: 275px;
-    margin-top: 20px;
-}
-.relocation-intro-container{
-    width: 50%;
-    border-left: solid 10px orange;
-    padding-left: 20px;
-    padding-right: 20px;
-}
-.relocation-intro-container > h3 {
-    font-family: 'Quicksand', sans-serif;
-    margin-top: 5px;
-    margin-bottom: 20px;
-}
-.relocation-photo-container{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 50%;
-    height: auto;
-    background-image: url(https://www.logistec.com/wp-content/uploads/2017/12/placeholder.png);
-    background-size: cover;
-    background-repeat: no-repeat;
-    font-family: 'Quicksand', sans-serif;
-}
+
 
 .home-buying-strategy-wrapper {
     display: flex;
@@ -850,9 +894,8 @@ a {
     display: flex;
     width: 100%;
     flex-direction: row;
-    flex-wrap: wrap;
     height: 350px;
-    background: url(https://github.com/nickwoodswi/real-estate-site/blob/master/srg-photos/3131-w-donges-bay-rd-325crop.jpg?raw=true);
+    background: url(/srg-photos/3131-w-donges-bay-rd-325crop.jpg);
     background-size: cover;
     background-repeat: no-repeat;
 }
@@ -861,7 +904,8 @@ a {
     flex-direction: column;
     justify-content: center;
     width: 50%;
-    font-family: 'Quicksand', sans-serif
+    font-family: 'Quicksand', sans-serif;
+    margin-left: 10px;
 }
 .mortgage-calculator-container{
     display: flex;
@@ -875,18 +919,17 @@ a {
     height: 10%;
     margin-top: 20px;
     margin-bottom: 20px;
-    padding-left: 25px;
+    margin-left: 10px;
 }
 .how-to-buy-a-home-correctly-headline{
-    height: 30%;
-    margin-bottom: 20px;
-    margin-left: 20px;
+    height: 20%;
     font-size: 36px;
     text-align: center;
+    margin-bottom: 20px;
 }
 .how-to-buy-a-home-correctly-detail{
-    height: 60%;
-    margin-left: 20px;
+    height: 70%;
+    margin-left: auto;
     margin-right: auto;
     font-family: "Trebuchet MS", Helvetica, sans-serif;
 }
@@ -997,7 +1040,7 @@ a {
     flex-direction: row;
     height: 325px;
     align-items: center;
-    margin-top: 10px;
+    margin-top: 30px;
     margin-bottom: 10px;
 }
 .buying-process-intro{
@@ -1015,34 +1058,66 @@ a {
 }
 .financing-section{
     display: flex;
-    width: 100;
+    flex-wrap: wrap;
+    width: 100%;
     flex-direction: row;
     height: 550px;
     font-family: 'Quicksand', sans-serif;
-    margin-bottom: 75px;
+    margin-bottom: 25px;
 }
 .financing-guide{
-    width: 65%;
-    padding-left: 40px;
+    width: 100%;
+    padding-left: 20px;
     padding-top: 15px;
     padding-right: 10px;
+    margin-bottom: 35px;
+    margin-top: 20px;
+}
+.relocation-container{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 275px;
+    margin-top: 20px;
+}
+.relocation-intro-container{
+    width: 50%;
+    border-left: solid 10px orange;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+.relocation-intro-container > h3 {
+    font-family: 'Quicksand', sans-serif;
+    margin-top: 5px;
+    margin-bottom: 20px;
+}
+.relocation-photo-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    height: 100%;
+    background-image: url(https://www.logistec.com/wp-content/uploads/2017/12/placeholder.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    font-family: 'Quicksand', sans-serif;
 }
 .lenders-list{
-    width: 35%;
+    width: 100%;
     text-align: center;
-    border-top: dotted 1px grey;
-    border-left: solid 10px orange;
-    border-bottom: dotted 1px grey;
+    border-right: solid 10px orange;
 }
 .lenders-list h3{
     font-weight: bold;
     text-decoration: underline orange;
-    margin: 20px;
+    margin-top: 40px;
+    font-family: 'Quicksand', sans-serif
 }
 .lenders-list img{
     width: 220px;
     margin: 20px;
 }
+
 .homes-for-sale-by-neighborhood{
     display: flex;
     flex-direction: column;
