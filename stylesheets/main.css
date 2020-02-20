@@ -196,7 +196,7 @@
     .buying-process-chart {
         margin-top: 40px;
         width: 100% !important;
-        background: url(/srg-photos/3131-w-donges-bay-rd-325crop.jpg);
+        background: url(https://github.com/nickwoodswi/real-estate-site/blob/master/srg-photos/3131-w-donges-bay-rd-325crop.jpg?raw=true);
         background-size: cover;
         background-repeat: no-repeat;
     }
@@ -895,7 +895,7 @@ a {
     width: 100%;
     flex-direction: row;
     height: 350px;
-    background: url(/srg-photos/3131-w-donges-bay-rd-325crop.jpg);
+    background: url(https://github.com/nickwoodswi/real-estate-site/blob/master/srg-photos/3131-w-donges-bay-rd-325crop.jpg?raw=true);
     background-size: cover;
     background-repeat: no-repeat;
 }
